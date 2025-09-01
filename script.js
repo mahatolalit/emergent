@@ -20,7 +20,7 @@ const pizzaData = [
         price: 15.99,
         category: 'non-veg',
         size: 'large',
-        image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763f30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Spicy pepperoni with mozzarella cheese'
     },
     {
@@ -38,7 +38,7 @@ const pizzaData = [
         price: 16.99,
         category: 'non-veg',
         size: 'large',
-        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Ham, pineapple, and mozzarella cheese'
     },
     {
@@ -47,7 +47,7 @@ const pizzaData = [
         price: 18.99,
         category: 'non-veg',
         size: 'large',
-        image: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763f30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Grilled chicken, BBQ sauce, red onions'
     },
     {
@@ -65,7 +65,7 @@ const pizzaData = [
         price: 21.99,
         category: 'non-veg',
         size: 'large',
-        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Pepperoni, sausage, bacon, ham'
     },
     {
@@ -74,7 +74,7 @@ const pizzaData = [
         price: 15.99,
         category: 'veg',
         size: 'medium',
-        image: 'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1598023696416-0193a0bcd302?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Fresh spinach, feta cheese, sun-dried tomatoes'
     },
     {
@@ -83,7 +83,7 @@ const pizzaData = [
         price: 19.99,
         category: 'non-veg',
         size: 'large',
-        image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763f30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Pepperoni, sausage, peppers, onions, mushrooms'
     },
     {
@@ -92,7 +92,7 @@ const pizzaData = [
         price: 14.99,
         category: 'veg',
         size: 'small',
-        image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Fresh mozzarella, tomatoes, basil, balsamic glaze'
     },
     {
@@ -101,7 +101,7 @@ const pizzaData = [
         price: 17.99,
         category: 'non-veg',
         size: 'large',
-        image: 'https://images.unsplash.com/photo-1594007654729-407eedc4be65?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Spicy buffalo chicken, ranch, celery'
     },
     {
@@ -110,7 +110,7 @@ const pizzaData = [
         price: 16.99,
         category: 'veg',
         size: 'medium',
-        image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+        image: 'https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
         description: 'Mozzarella, cheddar, parmesan, gorgonzola'
     }
 ];
