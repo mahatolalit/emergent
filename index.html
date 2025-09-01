@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMania - Delicious Pizzas Delivered Fresh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-pizza-slice"></i>
+                <span>PizzaMania</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="cart.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart <span id="cart-count" class="cart-count">0</span>
+                </a>
+                <button id="auth-btn" class="auth-btn">Login</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">
+                Delicious <span class="highlight">Pizzas</span><br>
+                Delivered Fresh to Your Door
+            </h1>
+            <p class="hero-subtitle animate-fade-in-delay">
+                Authentic Italian recipes with the finest ingredients, crafted with love and delivered with care.
+            </p>
+            <div class="hero-buttons animate-fade-in-delay-2">
+                <a href="shop.html" class="btn btn-primary">Order Now</a>
+                <a href="#featured" class="btn btn-secondary">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Delicious Pizza" class="animate-float">
+        </div>
+    </section>
+
+    <!-- Featured Pizzas -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Pizzas</h2>
+            <div class="pizza-grid">
+                <div class="pizza-card animate-slide-up">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Margherita Pizza">
+                    <div class="pizza-info">
+                        <h3>Margherita Classic</h3>
+                        <p>Fresh mozzarella, tomato sauce, and basil</p>
+                        <div class="pizza-price">$12.99</div>
+                        <button class="btn btn-primary" onclick="addToCart('margherita', 'Margherita Classic', 12.99, 'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="pizza-card animate-slide-up">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763f30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pepperoni Pizza">
+                    <div class="pizza-info">
+                        <h3>Pepperoni Supreme</h3>
+                        <p>Spicy pepperoni with mozzarella cheese</p>
+                        <div class="pizza-price">$15.99</div>
+                        <button class="btn btn-primary" onclick="addToCart('pepperoni', 'Pepperoni Supreme', 15.99, 'https://images.unsplash.com/photo-1565299507177-b0ac66763f30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="pizza-card animate-slide-up">
+                    <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Veggie Pizza">
+                    <div class="pizza-info">
+                        <h3>Veggie Garden</h3>
+                        <p>Bell peppers, mushrooms, onions, olives</p>
+                        <div class="pizza-price">$14.99</div>
+                        <button class="btn btn-primary" onclick="addToCart('veggie', 'Veggie Garden', 14.99, 'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose PizzaMania?</h2>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Fast Delivery</h3>
+                            <p>Hot and fresh pizzas delivered in 30 minutes or less</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3>Fresh Ingredients</h3>
+                            <p>Only the finest and freshest ingredients in every pizza</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h3>Made with Love</h3>
+                            <p>Each pizza is handcrafted with passion and care</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pizza Chef">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-pizza-slice"></i>
+                        <span>PizzaMania</span>
+                    </div>
+                    <p>Delivering happiness, one slice at a time since 2020.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(555) 123-PIZZA</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@pizzamania.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Pizza Street, Food City, FC 12345</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <div class="hours">
+                        <div>Monday - Thursday: 11AM - 10PM</div>
+                        <div>Friday - Saturday: 11AM - 11PM</div>
+                        <div>Sunday: 12PM - 9PM</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PizzaMania. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PizzaMania</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-pizza-slice"></i>
+                <span>PizzaMania</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="cart.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart <span id="cart-count" class="cart-count">0</span>
+                </a>
+                <button id="auth-btn" class="auth-btn">Login</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1>Our Pizza Menu</h1>
+            <p>Choose from our delicious selection of handcrafted pizzas</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filters-card">
+                        <h3><i class="fas fa-filter"></i> Filters</h3>
+                        
+                        <div class="filter-group">
+                            <h4>Category</h4>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="all" checked>
+                                <span>All Pizzas</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="veg">
+                                <span>Vegetarian</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="category" value="non-veg">
+                                <span>Non-Vegetarian</span>
+                            </label>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Size</h4>
+                            <label class="filter-option">
+                                <input type="checkbox" name="size" value="small">
+                                <span>Small (8")</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="size" value="medium">
+                                <span>Medium (12")</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="size" value="large">
+                                <span>Large (16")</span>
+                            </label>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h4>Price Range</h4>
+                            <div class="price-range">
+                                <input type="range" id="price-range" min="10" max="25" value="25">
+                                <div class="price-labels">
+                                    <span>$10</span>
+                                    <span id="max-price">$25</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-secondary btn-full" onclick="clearFilters()">Clear Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-main">
+                    <div class="products-header">
+                        <div class="results-count">
+                            <span id="results-count">12</span> pizzas found
+                        </div>
+                        <div class="sort-options">
+                            <select id="sort-select">
+                                <option value="name">Sort by Name</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="products-grid" class="products-grid">
+                        <!-- Products will be dynamically loaded here -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
